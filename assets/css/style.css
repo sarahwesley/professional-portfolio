@@ -26,6 +26,7 @@ header h1 {
 
 header a {
     text-decoration: none;
+    color: darkslategrey;
 }
 
 header nav {
@@ -80,12 +81,14 @@ section {
     background-size: cover;
     background-position: 80%;
     background-position: center;
+    width: 100%
     height: 150px;
     padding: 55px;
 }
 
 .hero-cta {
     padding: 5px 5px 5px 5px;
+    align-items: right;
     background-color: aquamarine;
     color: darkslategrey;
 }
@@ -97,10 +100,10 @@ section {
 .section-title {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     float: left;
     align-items: left;
-    padding: 20px 20px;
+    padding: 5px 5px;
     width: 25%;
     border-right: solid 2px darkslateblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -111,8 +114,9 @@ section {
 .section p {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-    width: 80%;
+    justify-content: space-between;
+    width: 50%;
+    height: 50%;
     margin: 0 auto;
 
 }
@@ -121,7 +125,19 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: darkslateblue;
+    }
+
+.section.info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
     margin: 0 auto;
     line-height: 1.7;
     color: darkslateblue;
@@ -195,11 +211,16 @@ footer {
     background-color: darkslategray;
     color: aquamarine;
     width: 100%;
-    height: 40px;
+    height: auto;
     padding: 40px 40px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     font-size: 12px;
+}
+
+footer img {
+    border-radius: 10px;
+    margin: auto;
 }
