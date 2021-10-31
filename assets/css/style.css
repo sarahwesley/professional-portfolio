@@ -4,31 +4,28 @@
     box-sizing: border-box;
 }
 
+
 header {
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
-    background-image: url("../images/hero.jpg");
-    background-size: cover;
-    background-position: 80%;
-    background-position: center;
+    background-color: darkslategrey;
+    
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: mediumspringgreen;
+    font-weight: lighter;
+    font-size: 30px;
+    color: darkslategrey;
+    background-color: aquamarine;
     margin: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+    padding: 10px;
 }
 
 header a {
     text-decoration: none;
-    color: mediumspringgreen;
 }
 
 header nav {
@@ -46,18 +43,163 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    text-decoration: none;
+    
 }
 
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.5vw;
-    text-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+    color: aquamarine;
+    border-bottom: solid 2px aquamarine;
+    
 }
 
 header nav ul li a:hover {
     background: white;
     color: skyblue;
-    border-radius: 10px;
-    text-shadow: none;
+}
+
+body {
+    background-color: lavender;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    padding: 20px;
+}
+
+/* hero section */
+.hero {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-items: right;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-position: center;
+    height: 150px;
+    padding: 55px;
+}
+
+.hero-cta {
+    padding: 5px 5px 5px 5px;
+    background-color: aquamarine;
+    color: darkslategrey;
+}
+
+/* hero section end */
+
+/* about me section */
+
+.section-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    float: left;
+    align-items: left;
+    padding: 20px 20px;
+    width: 25%;
+    border-right: solid 2px darkslateblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkslateblue;
+
+}
+
+.section p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: darkslateblue;
+    }
+
+.projects h3 {
+    color: darkslateblue; 
+    background-color: aquamarine;      
+    width: 40%;
+    font-size: 18px;
+    margin: 0;
+    padding: 5px 5px;
+    text-align: center;
+    position: relative;
+    top: 95px;
+    left: 0px;
+    border: solid 3px darkslateblue;
+    }
+
+.projects h4 {
+    color: darkslateblue;
+    background-color: aquamarine;
+    width: 40%;
+    font-size: 12px;
+    margin: 0;
+    padding: 5px 5px;
+    text-align: center;
+    position: relative;
+    top: 90px;
+    left: 0px;
+    border: solid 3px darkslateblue;
+    border-top: none;
+    }
+
+.projects img, .projects iframe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 350px;
+    height: 300px;
+    border: solid 3px darkslateblue;
+}
+
+.section ul {
+    list-style: none;
+    padding: 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section ul li a {
+    text-decoration: none;
+    color: darkslateblue;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: darkslateblue;
+    border-bottom: solid 1px darkslateblue;
+    list-style: none;
+    padding: 5px 5px;
+}
+
+.section ul li a:hover{
+    background-color: darkslateblue;
+    color: white;
+}
+
+footer {
+    background-color: darkslategray;
+    color: aquamarine;
+    width: 100%;
+    height: 40px;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 12px;
 }
